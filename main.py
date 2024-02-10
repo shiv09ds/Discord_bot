@@ -10,7 +10,6 @@ bot = Bot(command_prefix="!", intents= discord.Intents.all())
 
 @bot.event
 async def on_ready():
-	os.system('clear')
 	synced = await bot.tree.sync()
 	print(f"Synced {len(synced)} command(s)")
 
